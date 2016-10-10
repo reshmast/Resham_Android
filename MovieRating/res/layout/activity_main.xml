@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/moviename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:hint="@string/moviename">
+
+        <requestFocus />
+    </EditText>
+    
+    <Spinner
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </Spinner>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/year"/>
+
+    <EditText
+        android:id="@+id/duration"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/duration" >
+
+    </EditText>
+    
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/reviews"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" 
+        android:gravity="top"
+        android:hint="@string/reviews"/>
+
+    <EditText
+        android:id="@+id/starring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/starring"/>
+
+    <EditText
+        android:id="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/director" >
+
+        
+    </EditText>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+</LinearLayout>
